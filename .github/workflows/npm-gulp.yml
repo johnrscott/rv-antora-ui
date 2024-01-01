@@ -23,8 +23,8 @@ jobs:
         npm install
         gulp bundle
 
-    - name: upload bundle
-      uses: actions/upload-artifact@v4
+    - name: Release UI zip
+      uses: softprops/action-gh-release@v1
       with:
-        name: ui-bundle
-        path: build/ui-bundle.zip
+        files: build/ui-bundle.zip
+        
