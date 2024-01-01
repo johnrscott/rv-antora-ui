@@ -3,7 +3,7 @@ name: NodeJS with Gulp
 on:
   push:
     tags:
-      - "v*.*.*"
+      - "*"
 
 jobs:
   build:
